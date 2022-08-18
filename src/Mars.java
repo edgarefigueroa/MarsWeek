@@ -31,6 +31,7 @@ public class Mars {
 
         //Call a function called LandingCheck() that has a parameter of 100, returns boolean, and set it equal to Landing
         landing = landingCheck(100);
+        new GuessingGame();
     }
 
     /**
@@ -40,21 +41,19 @@ public class Mars {
      * @throws InterruptedException
      */
 
-    //Create a public static void function called LandingCheck with an int parameter called Loops
+    // public static void function called LandingCheck with an int parameter called Loops
     public static boolean landingCheck(int loops) throws InterruptedException {
-        //Create a for loop that starts at i = 0, loops until i is equal to Loops, and i increments by 1 each loop
-        for (int i = 0; i <= loops; i++)
-        {
-            //Create an if statement with 1 if, 2 else ifs, and 1 else
-            //The if statement should check to see if i divisible by 3 equals 0, and that i divisible by 5 equals 0
+        // loops until i is equal to loops, and i increments by 1 each loop
+        for (int i = 0; i <= loops; i++) {
+            // if statement should check to see if i divisible by 3 equals 0, and that i divisible by 5 equals 0
             if (((i % 3) == 0) && ((i % 5) == 0)) {
                 System.out.println("Keep Center");
             }
-            //The first else if statement should check if i divisible by 5 equals 0
+            // else if statement should check if i divisible by 5 equals 0
             else if ((i % 5) == 0) {
                 System.out.println("Right");
             }
-            //The first else if statement should check if i divisible by 3 equals 0
+            // else if statement should check if i divisible by 3 equals 0
             else if ((i % 3) == 0) {
                 System.out.println("Left");
             }
