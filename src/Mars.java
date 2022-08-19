@@ -32,6 +32,7 @@ public class Mars {
         //Call a function called LandingCheck() that has a parameter of 100, returns boolean, and set it equal to Landing
         landing = landingCheck(100);
         new GuessingGame();
+        new MarsExpedition();
     }
 
     /**
